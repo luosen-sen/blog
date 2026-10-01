@@ -1,0 +1,33 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "我的个人博客，使用 Hexo + Butterfly 主题搭建",
+  "license": "MIT",
+  "scripts": {
+    "dev": "hexo server",
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "new": "hexo new",
+    "deploy": "hexo deploy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "hexo": {
+    "version": "7.3.0"
+  },
+  "dependencies": {
+    "hexo": "^7.3.0",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-searchdb": "^1.5.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.1",
+    "hexo-renderer-pug": "^3.0.0",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-butterfly": "^4.11.0"
+  }
+}

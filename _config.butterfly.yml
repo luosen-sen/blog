@@ -1,0 +1,94 @@
+# Hexo 主配置里需要改的地方都在用「你的用户名」「仓库名」标出，搜一下就能找到
+
+# Butterfly 主题配置
+# 完整配置文档：https://butterfly.js.org/posts/4aa8abbe/
+# 这里只放常用项，其余保持主题默认
+
+# 菜单导航（name 是显示文字，link 是链接，可以用 /about/ 这种站内地址）
+nav:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder
+  标签: /tags/ || fas fa-tags
+  留言: /guestbook/ || fas fa-comment-dots
+  关于: /about/ || fas fa-heart
+
+# 左上角头像和网站名
+avatar:
+  img: /img/avatar.svg
+  effect: false
+
+# 浏览器标签页小图标（没有图标文件就删掉这一行）
+favicon: /img/avatar.svg
+
+# 社交链接（不需要的删掉即可）
+social:
+  fab fa-github: https://github.com/你的用户名 || Github
+  fas fa-envelope: mailto:你的邮箱@example.com || Email
+
+# 首页顶部大图（可以换成自己的图片，或删掉这个键）
+index_post_content:
+  method: false
+
+# 文章封面：ture 用文章内第一张图，false 用下面指定的默认图
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+    - /img/default_cover.svg
+
+# 深色模式切换按钮
+darkmode:
+  enable: true
+  button: true
+
+# 代码块
+code_blocks:
+  theme:
+    light: atom-one-light
+    dark: atom-one-dark
+  macStyle: true
+  copy: true
+  font: {}
+  language: true
+
+# 阅读体验
+reading:
+  strict_broken_link_detection: false
+
+# 页脚
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text:
+
+# 本地搜索（依赖 hexo-generator-searchdb，主配置里已开启）
+local_search:
+  enable: true
+  preload: false
+  CDN:
+
+# 评论（默认关闭，想用 Waline/Giscus/Disqus 再填）
+comments:
+  use: false
+  text: true
+  lazyload: false
+
+# 访问统计（默认关闭）
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+# 一言 / 打字机副标题
+subtitle:
+  enable: false
+  effect: true
+  typedOption: {}
+  source: false
+
+# 背景（默认关闭，开启后会比较吃性能）
+background:
+  enable: false

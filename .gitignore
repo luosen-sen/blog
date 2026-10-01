@@ -1,0 +1,18 @@
+# 依赖
+node_modules/
+
+# Hexo 生成的网页
+public/
+.deploy*/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+
+# 草稿与临时文件
+*.tmp
+db.json
