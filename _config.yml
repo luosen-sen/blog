@@ -11,14 +11,11 @@ author: 你的昵称
 language: zh-CN
 timezone: Asia/Shanghai
 
-# ==================== 网址设置（部署到 GitHub Pages 后要改！） ====================
-# 把 your-username 换成你的 GitHub 用户名，your-repo 换成仓库名
-# 例如用户名为 zhangshan、仓库名为 blog，则改成：
-#   url: https://zhangshan.github.io
-#   root: /blog/
-# 注意：用户名和仓库名请用英文字母，本地预览才能正常打开
-url: https://your-username.github.io
-root: /your-repo/
+# ==================== 网址设置 ====================
+# 已按 luosen-sen / blog 配置好
+# 如果仓库名不叫 blog，把下面的 /blog/ 改成你的仓库名（前后都要有斜杠）
+url: https://luosen-sen.github.io
+root: /blog/
 
 # 文章链接格式：/2026/10/01/文章标题/
 permalink: :year/:month/:day/:title/
@@ -96,7 +93,7 @@ pagination_dir: page
 # 如果你想在本地手动推送，取消下面注释并改成你自己的仓库地址：
 # deploy:
 #   type: git
-#   repo: https://github.com/你的用户名/仓库名.git
+#   repo: https://github.com/luosen-sen/blog.git
 #   branch: gh-pages
 #   message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
 

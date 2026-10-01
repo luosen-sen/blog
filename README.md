@@ -34,7 +34,7 @@
 
 ```bash
 npm new "文章标题"     # 1. 新建文章
-npm run dev            # 2. 本地预览：浏览器打开 http://localhost:4000/your-repo/
+npm run dev            # 2. 本地预览：浏览器打开 http://localhost:4000/blog/
 npm run build          # 3. 生成最终网页
 ```
 
@@ -112,39 +112,24 @@ Butterfly 主题的配置项有几百个，完整中文文档：
 
 ### 第一次配置（只做一次）
 
-1. 去 <https://github.com/new> 建一个**空仓库**，名字用英文，比如 `blog`（**不要**勾选初始化 README）。
+1. 去 <https://github.com/new> 建一个**空仓库**，名字用英文，比如 `blog`，**不要**勾选初始化 README。
+   本站配置已按 `luosen-sen / blog` 写好；如果仓库名不叫 `blog`，记得同步改 [_config.yml](_config.yml) 里的 `root`。
+
 2. 把代码推上去：
 
    ```bash
-   git init
-   git add .
-   git commit -m "第一个版本"
-   git branch -M main
-   git remote add origin https://github.com/你的用户名/blog.git
+   git remote add origin https://github.com/luosen-sen/blog.git
    git push -u origin main
    ```
 
-3. 改 [_config.yml](_config.yml) 里的网址，这两处必须和你的仓库对得上：
+   第一次推送会**弹出浏览器窗口**，点 **Authorize** 授权即可（Git Credential Manager 会记住登录状态，以后不用再登）。
 
-   ```yaml
-   url: https://你的用户名.github.io      # 你的用户名
-   root: /blog/                          # 你的仓库名，前后都要有斜杠
-   ```
+3. 打开仓库页面 → **Settings** → 左边 **Pages** → **Build and deployment / Source** 选 **GitHub Actions**。
 
-   然后提交推送：
+等一两分钟，刷新页面，仓库的 **Actions** 标签页里显示绿色对勾就发布成功了。
+地址是 <https://luosen-sen.github.io/blog/>。
 
-   ```bash
-   git add .
-   git commit -m "配置网址"
-   git push
-   ```
-
-4. 打开仓库页面 → **Settings** → 左边 **Pages** → **Build and deployment / Source** 选 **GitHub Actions**。
-
-等一两分钟，刷新一下，仓库的 **Actions** 标签页里显示绿色对勾就发布成功了。
-地址是 `https://你的用户名.github.io/blog/`。
-
-> 特殊：如果仓库名就叫 `你的用户名.github.io`，把 `root` 设成 `/`，网址就是 `https://你的用户名.github.io/`。
+> 特殊：如果仓库名就叫 `luosen-sen.github.io`，把 `root` 设成 `/`，网址就是 <https://luosen-sen.github.io/>。
 
 ### 以后更新
 
@@ -166,7 +151,7 @@ npm run clean && npm run build
 Hexo 有缓存，`clean` 清一下。线上没变就等两三分钟，或者去 Actions 看日志。
 
 **本地预览地址是什么？**
-`http://localhost:4000/your-repo/`，最后的 `/your-repo/` 就是 `_config.yml` 里 `root` 的值。
+`http://localhost:4000/blog/`，最后的 `/blog/` 就是 `_config.yml` 里 `root` 的值。
 想直接访问 `http://localhost:4000/`，就把 `root` 改成 `/`（但这样线上资源路径也会变，上线前记得改回来）。
 
 **端口被占用？** `npm run dev -- --port 4001` 换个端口。

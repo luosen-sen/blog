@@ -1,4 +1,4 @@
-# Hexo 主配置里需要改的地方都在用「你的用户名」「仓库名」标出，搜一下就能找到
+# 主题配置已按 luosen-sen / blog 配好，改完记得重新 npm run build
 
 # Butterfly 主题配置
 # 完整配置文档：https://butterfly.js.org/posts/4aa8abbe/
@@ -21,10 +21,10 @@ avatar:
 # 浏览器标签页小图标（没有图标文件就删掉这一行）
 favicon: /img/avatar.svg
 
-# 社交链接（不需要的删掉即可）
+# 社交链接（不需要的删掉即可；把邮箱换成你的）
 social:
-  fab fa-github: https://github.com/你的用户名 || Github
-  fas fa-envelope: mailto:你的邮箱@example.com || Email
+  fab fa-github: https://github.com/luosen-sen || Github
+  fas fa-envelope: mailto:Razaquraishi460@gmail.com || Email
 
 # 首页顶部大图（可以换成自己的图片，或删掉这个键）
 index_post_content:
